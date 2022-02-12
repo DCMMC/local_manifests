@@ -13,6 +13,10 @@
     <!-- Deathmist's Hybris-Installer -->
     <project path="hybris/hybris-installer" name="DCMMC/hybris-installer" revision="hybris-16.0"/>
 
+    <!-- patched droidmedia to fix compile error -->
+    <remove-project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
+    <project path="external/droidmedia" name="DCMMC/droidmedia" revision="master" />
+    
     <!-- patched update_engine to fix compile error -->
     <remove-project path="system/update_engine" name="LineageOS/android_system_update_engine"/>
     <project path="system/update_engine" name="DCMMC/android_system_update_engine" />
